@@ -81,10 +81,10 @@
 
         <main>
             <div class="right">
-                <!-- <h1 style>Matches</h1>
-                    <div class="text">
-                        <input type="text" placeholder="Search Player">
-                    </div> -->
+                <h1 style>Matches</h1>
+                <!-- <div class="text">
+                    <input type="text" placeholder="Search Player">
+                </div> -->
                 <div class="top">
                     <button id = "menu-btn">
                         <span class="material-icons-round">menu</span>
