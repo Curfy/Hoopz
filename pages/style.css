@@ -45,7 +45,7 @@
     outline: 0;
     appearance: none;
     border: 0;
-    text-decoration: none;
+    text-decoration: none !important;
     list-style: none;
     box-sizing: border-box;
 }
@@ -753,4 +753,27 @@ main .recent-orders a{
     .right .top button span{
         font-size: 2rem;
     }
+}
+
+/* my css */
+.content{
+    margin-top: 3rem;
+}
+
+.card{
+    border: none !important;
+}
+
+.foot-btn{
+    padding: 1em;
+    border-top: 1px solid #edeffd;
+}
+
+.foot-btn-center{
+    border-left: 1px solid #edeffd;
+    border-right: 1px solid #edeffd;
+}
+
+.test{
+    border: 2px solid red;
 }
