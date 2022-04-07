@@ -741,6 +741,7 @@ main .recent-orders a{
 }
 
 /* my css */
+
 .content{
     margin-top: 3rem;
 }
@@ -750,14 +751,15 @@ main .recent-orders a{
 }
 
 .foot-btn{
+    font-weight: bold;
     padding: 1em;
     border-top: 1px solid #edeffd;
 }
 
-.foot-btn-center{
+/* .foot-btn-center{
     border-left: 1px solid #edeffd;
     border-right: 1px solid #edeffd;
-}
+} */
 
 #card-display-left{
     min-height: 100%;
@@ -771,6 +773,10 @@ main .recent-orders a{
 .final-score{
     font-size: xx-large;
     font-weight: bold;
+}
+
+.foot-btn a{
+    color: var(--color-primary);
 }
 
 .pic{
