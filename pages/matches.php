@@ -1,6 +1,9 @@
-
 <div class="card mb-5">
-	<div class="card-body">test</div>
+	<div class="card-body">
+			<input type="text" id="datepicker" size="10" class="form-control">
+
+			<!-- <img src="./images/calendar-icon.png" class="calendar-icon" alt="pick date"> -->
+	</div>
 </div>
 
 <!-- CARD DISPLAY TEMPLATE -->
