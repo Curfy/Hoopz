@@ -262,7 +262,7 @@ aside .sidebar .logout:hover{
 /* MAIN */
 
 main{
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 main .text{
@@ -408,9 +408,9 @@ main {
     color: var(--color-dark-variant);
 }
 
-main  tr:last-child{
+/* main  tr:last-child{
     border: none;
-}
+} */
 
 main .recent-orders a{
     text-align: center;
@@ -623,9 +623,9 @@ main .recent-orders a{
         width: 83vw;
     }
 
-    main{
+    /* main{
         display: none;
-    }
+    } */
 }
 
 /* MEDIA QUERIES MOBILE*/
@@ -757,6 +757,36 @@ main .recent-orders a{
 .foot-btn-center{
     border-left: 1px solid #edeffd;
     border-right: 1px solid #edeffd;
+}
+
+#card-display-left{
+    min-height: 100%;
+    color: black;
+}
+
+.logo-container{
+    min-height: 70px;
+}
+
+.final-score{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.pic{
+    border-radius: 50%;
+}
+
+th{
+    color: var(--color-dark-variant);
+}
+
+.player-name{
+    font-size: larger;
+}
+
+.player-details{
+    font-size: smaller;
 }
 
 .test{
