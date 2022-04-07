@@ -7,13 +7,13 @@
 				<div class="card-body">
 					<div class="row justify-content-center g-2">
 						<div class="col-sm-3">
-							<div class="card-body">
+							<div>
 								<div class="logo-container">
 									<img src="./images/mavericks-logo.png" alt="mavericks-logo">
 								</div>
-								<p id="team-1-name"></p> Mavericks
+								<label id="team-1-name">Mavericks</label>
 								<br>
-								<p class="team-1-prescore">48-29</p>
+								<label class="team-1-prescore">48-29</label>
 							</div>
 						</div>
 						<div class="col-2  pt-4">
@@ -32,13 +32,13 @@
 							</div>
 						</div>
 						<div class="col-sm-3">
-							<div class="card-body">
+							<div>
 								<div class="logo-container">
 									<img src="./images/cavaliers-logo.png" alt="cavaliers-logo">
 								</div>
-								<p id="team-2-name">Cavaliers</p>
+								<label id="team-2-name">Cavaliers</label>
 								<br>
-								<p id="team-2-prescore">48-29</p>
+								<label id="team-2-prescore">48-29</label>
 							</div>
 						</div>
 					</div>
@@ -47,7 +47,7 @@
 					<div class="row g-0">
 						<div class="col-sm">
 							<div class="foot-btn">
-								<p id="match-date">04/05/2022</p>
+								<label id="match-date" class="align-middle">04/05/2022</label>
 							</div>
 						</div>
 						<div class="col-sm">
@@ -57,7 +57,7 @@
 						</div>
 						<div class="col-sm">
 							<div class="foot-btn">
-								<a href="#">
+								<a href="#" class="align-middle">
 									GAME DETAILS
 								</a>
 							</div>
@@ -68,9 +68,8 @@
 		</div>
 		<!-- RIGHT -->
 		<div class="col-lg">
-			<div class="card shadow-sm">
+			<div id="card-display-right" class="card shadow-sm">
 				<div class="card-body">
-					<!-- <p class="text-dark fw-bold">Game Leaders</p> -->
 					<table class="table table-responsive-sm table-hover align-middle caption-top">
 						<caption class="fw-bold text-dark">Game Leaders</caption>
 						<thead>
@@ -92,10 +91,10 @@
 										<div class="col-sm fw-normal">
 											<div class="player-info">
 												<div class="player-name">
-													<p id="player-1-name">Luka Doncic</p>
+													<label id="player-1-name">Luka Doncic</label>
 												</div>
 												<div class="player-details">
-													<p id="player-1-details">DAL | #77 | F-C</p>
+													<label id="player-1-details">DAL | #77 | F-C</label>
 												</div>
 											</div>
 										</div>
@@ -115,10 +114,10 @@
 										<div class="col-sm fw-normal">
 											<div class="player-info">
 												<div class="player-name">
-													<p id="player-2-name">Luka Doncic</p>
+													<label id="player-2-name">Luka Doncic</label>
 												</div>
 												<div class="player-details">
-													<p id="player-2-details">DAL | #77 | F-C</p>
+													<label id="player-2-details">DAL | #77 | F-C</label>
 												</div>
 											</div>
 										</div>

@@ -761,7 +761,7 @@ main .recent-orders a{
     border-right: 1px solid #edeffd;
 } */
 
-#card-display-left{
+#card-display-left, #card-display-right{
     min-height: 100%;
     color: black;
 }
