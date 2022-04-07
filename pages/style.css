@@ -402,13 +402,13 @@ main .recent-orders table:hover{
     box-shadow: none;
 }
 
-main table tbody td{
+main {
     height: 2.8rem;
     border-bottom: 1px solid var(--color-light);
     color: var(--color-dark-variant);
 }
 
-main table tbody tr:last-child td{
+main  tr:last-child{
     border: none;
 }
 
@@ -623,24 +623,9 @@ main .recent-orders a{
         width: 83vw;
     }
 
-    main table thead tr th:nth-child(4),
-    main table thead tr th:last-child{
+    main{
         display: none;
     }
-
-    main table tbody tr td:nth-child(4),
-    main table tbody tr td:last-child{
-        display: none;
-    }
-    /* main table thead tr th:last-child, 
-    main table thead tr th:first-child{
-        display: none;
-    }
-
-    main table tbody tr td:last-child, 
-    main table tbody tr td:first-child{
-        display: none;
-    } */
 }
 
 /* MEDIA QUERIES MOBILE*/
