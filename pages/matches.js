@@ -5,7 +5,7 @@ currId = 0;
 var myTemplate = $('#card-template')[0].outerHTML;
 
 // function that adds new template
-function load(){
+function load(valuesToLoad){
 	// add the template before the benchmark
 	$("#toStack").before(myTemplate);
 	// change the id of the newly added template
@@ -13,6 +13,7 @@ function load(){
 	
 
 	// modify html tags to specific values from db
+	console.log(valuesToLoad);
 	// empty for now since its dummy data only	
 
 
@@ -20,7 +21,9 @@ function load(){
 	currId += 1;
 }
 
+
+sampleValues = none;
 for (let i = 0; i < 5; i++){
-	load();
+	load(sampleValues);
 }
 
