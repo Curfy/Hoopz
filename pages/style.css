@@ -798,3 +798,15 @@ th{
 .test{
     border: 2px solid red;
 }
+
+label, caption{
+    color: var(--color-dark);
+}
+
+caption{
+    font-weight: bold;
+}
+
+.card-body, .card{
+    background-color: var(--color-white);
+}

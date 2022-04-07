@@ -1,6 +1,11 @@
+
+<div class="card mb-5">
+	<div class="card-body">test</div>
+</div>
+
 <!-- CARD DISPLAY TEMPLATE -->
 <div id="template" class="">
-	<div id="card-template" class="row gx-1 mb-3">
+	<div id="card-template" class="row gx-1 mb-4">
 		<!-- LEFT -->
 		<div class="col-xl-5 text-center">
 			<div id="card-display-left" class="card shadow-sm">
@@ -17,17 +22,17 @@
 							</div>
 						</div>
 						<div class="col-2  pt-4">
-							<div class="text-decoration-underline  final-score">
-								<p id="team-1-finalscore">120</p>
+							<div class="final-score">
+								<p id="team-1-finalscore" class="text-decoration-underline">120</p>
 							</div>
 						</div>
 						<div class="col  pt-4">
-							<div class="pt-3">
+							<label class="pt-3">
 								FINAL
-							</div>
+							</label>
 						</div>
 						<div class="col-2  pt-4">
-							<div class=" final-score">
+							<div class="final-score">
 								<p id="team-2-finalscore">112</p>
 							</div>
 						</div>
@@ -71,7 +76,7 @@
 			<div id="card-display-right" class="card shadow-sm">
 				<div class="card-body">
 					<table class="table table-responsive-sm table-hover align-middle caption-top">
-						<caption class="fw-bold text-dark">Game Leaders</caption>
+						<caption>Game Leaders</caption>
 						<thead>
 							<tr>
 								<th scope="col">PLAYER</th>
