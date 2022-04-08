@@ -45,7 +45,7 @@
     outline: 0;
     appearance: none;
     border: 0;
-    text-decoration: none;
+    text-decoration: none !important;
     list-style: none;
     box-sizing: border-box;
 }
@@ -262,7 +262,7 @@ aside .sidebar .logout:hover{
 /* MAIN */
 
 main{
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 main .text{
@@ -402,15 +402,15 @@ main .recent-orders table:hover{
     box-shadow: none;
 }
 
-main table tbody td{
+main {
     height: 2.8rem;
     border-bottom: 1px solid var(--color-light);
     color: var(--color-dark-variant);
 }
 
-main table tbody tr:last-child td{
+/* main  tr:last-child{
     border: none;
-}
+} */
 
 main .recent-orders a{
     text-align: center;
@@ -623,22 +623,7 @@ main .recent-orders a{
         width: 83vw;
     }
 
-    main table thead tr th:nth-child(4),
-    main table thead tr th:last-child{
-        display: none;
-    }
-
-    main table tbody tr td:nth-child(4),
-    main table tbody tr td:last-child{
-        display: none;
-    }
-    /* main table thead tr th:last-child, 
-    main table thead tr th:first-child{
-        display: none;
-    }
-
-    main table tbody tr td:last-child, 
-    main table tbody tr td:first-child{
+    /* main{
         display: none;
     } */
 }
@@ -753,4 +738,75 @@ main .recent-orders a{
     .right .top button span{
         font-size: 2rem;
     }
+}
+
+/* my css */
+
+.content{
+    margin-top: 3rem;
+}
+
+.card{
+    border: none !important;
+}
+
+.foot-btn{
+    font-weight: bold;
+    padding: 1em;
+    border-top: 1px solid #edeffd;
+}
+
+/* .foot-btn-center{
+    border-left: 1px solid #edeffd;
+    border-right: 1px solid #edeffd;
+} */
+
+#card-display-left, #card-display-right{
+    min-height: 100%;
+    color: black;
+}
+
+.logo-container{
+    min-height: 70px;
+}
+
+.final-score{
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.foot-btn a{
+    color: var(--color-primary);
+}
+
+.pic{
+    border-radius: 50%;
+}
+
+th{
+    color: var(--color-dark-variant);
+}
+
+.player-name{
+    font-size: larger;
+}
+
+.player-details{
+    font-size: smaller;
+}
+
+.test{
+    border: 2px solid red;
+}
+
+label, caption{
+    color: var(--color-dark);
+}
+
+caption{
+    font-weight: bold;
+}
+
+.card-body, .card{
+    background-color: var(--color-white);
 }
