@@ -1,9 +1,5 @@
-<div class="card mb-5">
-	<div class="card-body">
-			<input type="text" id="datepicker" size="10" class="form-control">
-
-			<!-- <img src="./images/calendar-icon.png" class="calendar-icon" alt="pick date"> -->
-	</div>
+<div class="card mb-5 calendar">
+	<input id="myCalendar" type="date" data-display-mode="block" data-close-on-select="true">
 </div>
 
 <!-- CARD DISPLAY TEMPLATE -->
@@ -24,17 +20,17 @@
 								<label class="team-1-prescore">48-29</label>
 							</div>
 						</div>
-						<div class="col-sm-2  pt-4">
+						<div class="col-sm-2  pt-5">
 							<div class="final-score">
 								<p id="team-1-finalscore" class="text-decoration-underline">120</p>
 							</div>
 						</div>
-						<div class="col  pt-4">
+						<div class="col  pt-5">
 							<label class="pt-3">
 								FINAL
 							</label>
 						</div>
-						<div class="col-sm-2  pt-4">
+						<div class="col-sm-2  pt-5">
 							<div class="final-score">
 								<p id="team-2-finalscore">112</p>
 							</div>
@@ -78,7 +74,7 @@
 		<div class="col-lg">
 			<div id="card-display-right" class="card shadow-sm">
 				<div class="card-body">
-					<table class="table table-responsive-sm table-hover align-middle caption-top">
+					<table class="table table-responsive-sm align-middle caption-top">
 						<caption>Game Leaders</caption>
 						<thead>
 							<tr>
@@ -147,5 +143,5 @@
 <!-- benchmark to stack templates -->
 <div id="toStack"></div>
 
-<!-- js to handle dynamic content -->
+<!-- js to handle dynamic content and calendar -->
 <script src="./matches.js"></script>

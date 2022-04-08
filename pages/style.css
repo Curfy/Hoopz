@@ -789,6 +789,10 @@ th{
     color: var(--color-dark-variant);
 }
 
+table{
+    border-collapse: unset;
+}
+
 .player-name{
     font-size: larger;
 }
@@ -801,7 +805,7 @@ th{
     border: 2px solid red;
 }
 
-label, caption{
+label, caption, td{
     color: var(--color-dark);
 }
 
