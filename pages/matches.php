@@ -1,5 +1,6 @@
-<div class="card mb-5 calendar">
-	<input id="myCalendar" type="date" data-display-mode="block" data-close-on-select="true">
+<div class="card calendar mb-5 test">
+	<!-- <input id="myCalendar" class="test" type="date" data-display-mode="block" data-close-on-select="true"> -->
+	<div type="date"></div>
 </div>
 
 <!-- CARD DISPLAY TEMPLATE -->
@@ -13,7 +14,7 @@
 						<div class="col-3">
 							<div>
 								<div class="logo-container">
-									<img src="./images/mavericks-logo.png" alt="mavericks-logo">
+									<img src="./images/mavericks-logo.png" class="logo" alt="mavericks-logo">
 								</div>
 								<label id="team-1-name">Mavericks</label>
 								<br>
@@ -25,10 +26,10 @@
 								<p id="team-1-finalscore" class="text-decoration-underline">120</p>
 							</div>
 						</div>
-						<div class="col  pt-5">
-							<label class="pt-3">
+						<div class="col pt-5">
+							<p class="pt-3  align-middle">
 								FINAL
-							</label>
+							</p>
 						</div>
 						<div class="col-sm-2  pt-5">
 							<div class="final-score">
@@ -38,7 +39,7 @@
 						<div class="col-3">
 							<div>
 								<div class="logo-container">
-									<img src="./images/cavaliers-logo.png" alt="cavaliers-logo">
+									<img src="./images/cavaliers-logo.png" class="logo" alt="cavaliers-logo">
 								</div>
 								<label id="team-2-name">Cavaliers</label>
 								<br>
@@ -48,15 +49,10 @@
 					</div>
 				</div>
 				<div class="card">
-					<div class="row g-0">
+					<div class="row g-0 justify-content-between">
 						<div class="col">
 							<div class="foot-btn">
 								<label id="match-date" class="align-middle">04/05/2022</label>
-							</div>
-						</div>
-						<div class="col-sm">
-							<div class="foot-btn foot-btn-center">
-								<!-- BOX SCORE -->
 							</div>
 						</div>
 						<div class="col">

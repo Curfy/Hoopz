@@ -91,7 +91,7 @@ if (!isset($_COOKIE['isLogin'])) {
 
         <main>
             <div class="right">
-                <h1 style>Matches</h1>
+                <h1>Matches</h1>
                 <!-- <div class="text">
                     <input type="text" placeholder="Search Player">
                 </div> -->

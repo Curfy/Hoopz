@@ -32,6 +32,10 @@ var calendars = bulmaCalendar.attach('[type="date"]', {
 	dateFormat: 'MMMM dd, yyyy',
 	isRange: false,
 	showHeader: false,
+	showFooter: false,
+	showButtons: false,
+	labelFrom: 'choose date',
+	headerPosition: 'bottom',
 	color: 'dark'
 });
 
