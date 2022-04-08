@@ -9,7 +9,7 @@ function load(){
 	// add the template before the benchmark
 	$("#toStack").before(myTemplate);
 	// change the id of the newly added template
-	$("#template").attr("id", currId.toString());
+	$("#card-template").attr("id", currId.toString());
 	
 
 	// modify html tags to specific values from db

@@ -14,7 +14,7 @@
 			<div id="card-display-left" class="card shadow-sm">
 				<div class="card-body">
 					<div class="row justify-content-center g-2">
-						<div class="col-sm-3">
+						<div class="col-3">
 							<div>
 								<div class="logo-container">
 									<img src="./images/mavericks-logo.png" alt="mavericks-logo">
@@ -24,7 +24,7 @@
 								<label class="team-1-prescore">48-29</label>
 							</div>
 						</div>
-						<div class="col-2  pt-4">
+						<div class="col-sm-2  pt-4">
 							<div class="final-score">
 								<p id="team-1-finalscore" class="text-decoration-underline">120</p>
 							</div>
@@ -34,12 +34,12 @@
 								FINAL
 							</label>
 						</div>
-						<div class="col-2  pt-4">
+						<div class="col-sm-2  pt-4">
 							<div class="final-score">
 								<p id="team-2-finalscore">112</p>
 							</div>
 						</div>
-						<div class="col-sm-3">
+						<div class="col-3">
 							<div>
 								<div class="logo-container">
 									<img src="./images/cavaliers-logo.png" alt="cavaliers-logo">
@@ -53,7 +53,7 @@
 				</div>
 				<div class="card">
 					<div class="row g-0">
-						<div class="col-sm">
+						<div class="col">
 							<div class="foot-btn">
 								<label id="match-date" class="align-middle">04/05/2022</label>
 							</div>
@@ -63,7 +63,7 @@
 								<!-- BOX SCORE -->
 							</div>
 						</div>
-						<div class="col-sm">
+						<div class="col">
 							<div class="foot-btn">
 								<a href="#" class="align-middle">
 									GAME DETAILS
@@ -96,7 +96,7 @@
 										<div class="col-sm-1 me-2">
 											<img id="player-1-pic" class="pic" src="./images/luka-pic.jpg" alt="Luka">
 										</div>
-										<div class="col-sm fw-normal">
+										<div class="col fw-normal">
 											<div class="player-info">
 												<div class="player-name">
 													<label id="player-1-name">Luka Doncic</label>
@@ -119,7 +119,7 @@
 										<div class="col-sm-1 me-2">
 											<img id="player-2-pic" class="pic" src="./images/luka-pic.jpg" alt="Luka">
 										</div>
-										<div class="col-sm fw-normal">
+										<div class="col fw-normal">
 											<div class="player-info">
 												<div class="player-name">
 													<label id="player-2-name">Luka Doncic</label>

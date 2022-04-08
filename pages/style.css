@@ -782,6 +782,7 @@ main .recent-orders a{
 
 .pic{
     border-radius: 50%;
+    max-width: 3em;
 }
 
 th{
