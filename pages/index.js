@@ -41,9 +41,3 @@ $(document).ready(function(){
 
 })
 
-// for calendar
-$( function() {
-$( "#datepicker" ).datepicker();
-$( "#datepicker" ).datepicker( "option", "dateFormat", "MM, yy" );
-$( "#datepicker" ).datepicker( "setDate", "today" );
-} );
