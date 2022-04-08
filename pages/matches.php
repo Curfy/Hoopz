@@ -21,7 +21,7 @@
 								<label class="team-1-prescore">48-29</label>
 							</div>
 						</div>
-						<div class="col-sm-2  pt-5">
+						<div class="col-2  pt-5">
 							<div class="final-score">
 								<p id="team-1-finalscore" class="text-decoration-underline">120</p>
 							</div>
@@ -31,7 +31,7 @@
 								FINAL
 							</p>
 						</div>
-						<div class="col-sm-2  pt-5">
+						<div class="col-2  pt-5">
 							<div class="final-score">
 								<p id="team-2-finalscore">112</p>
 							</div>
