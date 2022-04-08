@@ -31,7 +31,7 @@ if (!isset($_COOKIE['isLogin'])) {
 </head>
 
 <body>
-    <div class="container">
+    <div class="mycontainer">
         <aside>
             <div class="top">
                 <div class="logo">
