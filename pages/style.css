@@ -404,7 +404,7 @@ main .recent-orders table:hover{
 
 main {
     height: 2.8rem;
-    border-bottom: 1px solid var(--color-light);
+    /* border-bottom: 1px solid var(--color-light); */
     color: var(--color-dark-variant);
 }
 
@@ -745,6 +745,8 @@ main .recent-orders a{
 .content{
     margin-top: 3rem;
     width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card{
@@ -757,11 +759,6 @@ main .recent-orders a{
     border-top: 1px solid #edeffd;
 }
 
-/* .foot-btn-center{
-    border-left: 1px solid #edeffd;
-    border-right: 1px solid #edeffd;
-} */
-
 #card-display-left, #card-display-right{
     min-height: 100%;
     color: black;
@@ -769,6 +766,12 @@ main .recent-orders a{
 
 .logo-mycontainer{
     min-height: 70px;
+}
+
+.logo{
+    max-width: 120px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .final-score{
@@ -815,4 +818,19 @@ caption{
 
 .card-body, .card{
     background-color: var(--color-white);
+}
+
+.calendar{
+    width: 300px;
+}
+
+@media screen and (max-width: 576px) {
+    .final-score{
+        font-size: x-large;
+    }
+
+    .pt-5{
+        padding: 0 !important;
+        padding-top: 1em !important;
+    }
 }
