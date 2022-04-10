@@ -1,6 +1,19 @@
-<div class="card calendar mb-5 test">
-	<!-- <input id="myCalendar" class="test" type="date" data-display-mode="block" data-close-on-select="true"> -->
-	<div type="date"></div>
+<div class="header">
+	<div class="row mb-5">
+		<div class="col-6">
+			<div type="date"></div>
+		</div>
+		<div class="col-6">
+			<form class="d-flex">
+				<input class="form-control" type="search" placeholder="Search Team" aria-label="Search">
+				<button class="btn ms-2" type="submit">
+					<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24" style=" fill:#fff;">
+						<path d="M 9 2 C 5.1458514 2 2 5.1458514 2 9 C 2 12.854149 5.1458514 16 9 16 C 10.747998 16 12.345009 15.348024 13.574219 14.28125 L 14 14.707031 L 14 16 L 20 22 L 22 20 L 16 14 L 14.707031 14 L 14.28125 13.574219 C 15.348024 12.345009 16 10.747998 16 9 C 16 5.1458514 12.854149 2 9 2 z M 9 4 C 11.773268 4 14 6.2267316 14 9 C 14 11.773268 11.773268 14 9 14 C 6.2267316 14 4 11.773268 4 9 C 4 6.2267316 6.2267316 4 9 4 z"></path>
+					</svg>
+				</button>
+			</form>
+		</div>
+	</div>
 </div>
 
 <!-- CARD DISPLAY TEMPLATE -->
@@ -85,7 +98,7 @@
 							<tr>
 								<td scope="row">
 									<div class="row g-0">
-										<div class="col-sm-1 me-2">
+										<div class="col-auto me-2">
 											<img id="player-1-pic" class="pic" src="./images/luka-pic.jpg" alt="Luka">
 										</div>
 										<div class="col fw-normal">
@@ -108,7 +121,7 @@
 							<tr>
 								<td scope="row">
 									<div class="row g-0">
-										<div class="col-sm-1 me-2">
+										<div class="col-auto me-2">
 											<img id="player-2-pic" class="pic" src="./images/luka-pic.jpg" alt="Luka">
 										</div>
 										<div class="col fw-normal">
