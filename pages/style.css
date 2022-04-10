@@ -823,7 +823,9 @@ caption{
 }
 
 .header{
-    width: 600px;
+    /* width: 600px; */
+    width: 100%;
+    max-width: 600px;
 }
 
 .form-control:focus{

@@ -34,7 +34,7 @@ var calendars = bulmaCalendar.attach('[type="date"]', {
 	showHeader: false,
 	showFooter: false,
 	showButtons: false,
-	labelFrom: 'choose date',
+	labelFrom: 'Date',
 	headerPosition: 'bottom',
 	color: 'dark'
 });
