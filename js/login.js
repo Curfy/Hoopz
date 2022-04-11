@@ -37,6 +37,7 @@ $(document).ready(function(){
       $.ajax({
          url: "./methods/verifylogin.php",
          type: "POST",
+         async: false,
          data:{
             "username": usernameForm.value,
             "password": passwordForm.value,
