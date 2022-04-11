@@ -49,7 +49,7 @@ if (!isset($_COOKIE['isLogin'])) {
                     <h3>Dashboard</h3>
                 </a>
 
-                <a href="matches.php" class="active">
+                <a href="matches.php">
                     <span class="material-icons-outlined">sports_esports</span>
                     <h3>Matches</h3>
                 </a>
@@ -59,7 +59,7 @@ if (!isset($_COOKIE['isLogin'])) {
                     <h3>Purchases</h3>
                 </a>
 
-                <a href="logs.php">
+                <a href="logs.php" class="active">
                     <span class="material-icons-outlined">book</span>
                     <h3>Logs</h3>
                 </a>
@@ -91,7 +91,7 @@ if (!isset($_COOKIE['isLogin'])) {
 
         <main>
             <div class="right">
-                <h1 class="ps-5">Matches</h1>
+                <h1 class="ps-5">Logs</h1>
                 <!-- <div class="text">
                     <input type="text" placeholder="Search Player">
                 </div> -->
@@ -117,9 +117,7 @@ if (!isset($_COOKIE['isLogin'])) {
             </div>
 
             <!-- page content here -->
-            <div class="content">
-                <?php include 'matches_data.php' ?>
-            </div>
+
 
         </main>
         <!-- END OF MAIN -->

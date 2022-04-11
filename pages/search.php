@@ -35,7 +35,7 @@ if (!isset($_COOKIE['isLogin'])) {
             <div class="top">
                 <div class="logo">
                     <img src="./images/hoopzlogo.png" alt="">
-                    <h2 class="danger">HO<span class="score">OPZ</span></h2>
+                    <h2 class="danger" style = "font-weight: bold">HO<span class="score">OPZ</span></h2>
                 </div>
                 <div class="close" id="close-btn">
                     <span class="material-icons-sharp">close</span>
@@ -44,12 +44,12 @@ if (!isset($_COOKIE['isLogin'])) {
 
             <div class="sidebar">
 
-                <a href="#">
+                <a href="dashboard.php">
                     <span class="material-icons-sharp">grid_view</span>
                     <h3>Dashboard</h3>
                 </a>
 
-                <a href="#" class="active">
+                <a href="matches.php">
                     <span class="material-icons-outlined">sports_esports</span>
                     <h3>Matches</h3>
                 </a>
@@ -59,7 +59,7 @@ if (!isset($_COOKIE['isLogin'])) {
                     <h3>Purchases</h3>
                 </a>
 
-                <a href="#">
+                <a href="logs.php">
                     <span class="material-icons-outlined">book</span>
                     <h3>Logs</h3>
                 </a>
@@ -91,7 +91,7 @@ if (!isset($_COOKIE['isLogin'])) {
 
         <main>
             <div class="right">
-                <h1 class="ps-5">Matches</h1>
+                <h1 class="ps-5">Results For: Zenovain</h1>
                 <!-- <div class="text">
                     <input type="text" placeholder="Search Player">
                 </div> -->
@@ -116,10 +116,6 @@ if (!isset($_COOKIE['isLogin'])) {
                 </div>
             </div>
 
-            <!-- page content here -->
-            <div class="content">
-                <?php include 'matches.php' ?>
-            </div>
 
         </main>
         <!-- END OF MAIN -->

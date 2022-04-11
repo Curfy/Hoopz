@@ -8,11 +8,12 @@ session_start();
 $username = $_POST['username'];
 $password = $_POST['password'];
 
+$hashedpassword = hash('md5', $password);
 // $username = "zenovain";
 // $password = "123";
 
 $stmt = $db->prepare("SELECT * FROM accounts WHERE username = ? AND password = ?");
-$result = $stmt->execute([$username, $password]);
+$result = $stmt->execute([$username, $hashedpassword]);
 $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
 // $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -20,7 +21,7 @@ $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
 if($result){
 
-    $hashed = base64_encode(hash('md5', $result['username'] . $_SERVER['HTTP_USER_AGENT'] . time()));
+    $hashedtoken = base64_encode(hash('md5', $result['username'] . $_SERVER['HTTP_USER_AGENT'] . time()));
 
     // if($checkbox == 'true'){
     //     $_SESSION['token'] = $hashed;
@@ -36,10 +37,10 @@ if($result){
     $logindate = date('m/d/Y - h:i A');
     
 
-    $stmt = $db->prepare("UPDATE accounts SET token = '$hashed', lastlogin = '$logindate' WHERE username = '$username' AND password = '$password'");
+    $stmt = $db->prepare("UPDATE accounts SET token = '$hashedtoken', lastlogin = '$logindate' WHERE username = '$username' AND password = '$hashedpassword'");
     $stmt->execute();
 
-    echo json_encode(['status' => '201', 'token' => $hashed]);
+    echo json_encode(['status' => '201', 'token' => $hashedtoken]);
     
 }else{
     echo json_encode(['status' => '400']);

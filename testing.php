@@ -6,6 +6,6 @@
 // echo $hashed;
 
 
-
+echo hash('md5', 123);
 
 ?>

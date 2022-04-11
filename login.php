@@ -1,12 +1,12 @@
 <?php
 
 if(isset($_COOKIE['isLogin'])){
-  header("location: ./pages/home.php");
+  header("location: ./pages/dashboard.php");
 }
 
 if(isset($_COOKIE['token'])){
   setcookie("isLogin", "true");
-  header("location: ./pages/home.php");
+  header("location: ./pages/dashboard.php");
 }
 
 ?>
