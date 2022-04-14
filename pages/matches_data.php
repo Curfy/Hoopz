@@ -4,7 +4,7 @@
 			<div type="date"></div>
 		</div>
 		<div class="col-6">
-			<form class="d-flex">
+			<form class="d-flex" action="search.php">
 				<input class="form-control" type="search" placeholder="Search Team" aria-label="Search">
 				<button class="btn ms-2" type="submit">
 					<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24" style=" fill:#fff;">
@@ -17,7 +17,7 @@
 </div>
 
 <!-- CARD DISPLAY TEMPLATE -->
-<div id="template" class="">
+<div id="template" class="d-none">
 	<div id="card-template" class="row gx-1 mb-4">
 		<!-- LEFT -->
 		<div class="col-xl-5 text-center">

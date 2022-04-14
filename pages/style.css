@@ -3,7 +3,7 @@
 :root {
     --color-primary:#7380ec;
     --color-danger:#ff7782;
-    --color-success:#41f1b6;
+    --color-success:#00ac8f;
     --color-warning:#ffbb55;
     --color-white:#fff;
     --color-info-dark:#7d8da1;
@@ -14,7 +14,7 @@
     --color-dark-variant:#677483;
     --color-background:#f6f6f9;
 
-    --color-team1: #41f1b6;
+    --color-team1: #00ac8f;
     --color-score: #1d92ff;
     --color-team2: #ff7782;
 
@@ -83,20 +83,21 @@ img{
 }
 
 h1{
-    font-weight: 800;
+    font-weight: bolder;
     font-size: 1.8rem;
 }
 
 h2{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    font-weight: bolder;
 }
 
 h3{
-    font-size: 0.87rem;
+    font-size: 1.4rem;
 }
 
 h4{
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 h5{
@@ -264,7 +265,7 @@ aside .sidebar .logout:hover{
 main{
     margin-top: 2rem;
 }
-
+/* 
 main .text{
     display: inline-block;
     background: var(--color-light);
@@ -342,8 +343,6 @@ main .insights svg circle{
     stroke-width: 14;
     stroke-linecap: round;
     transform: translate(5px, 5px);
-    /* stroke-dasharray: 110;
-    stroke-dashoffset: 92; */
 }
 
 main .insights .sales svg circle{
@@ -375,10 +374,10 @@ main .insights .progress .number{
 main .insights small{
     margin-top: 1.3rem;
     display: block;
-}
+} */
 
 /* RECENT ORDERS */
-
+/* 
 main .recent-orders{
     margin-top: 2rem;
 }
@@ -400,25 +399,21 @@ main .recent-orders table{
 
 main .recent-orders table:hover{
     box-shadow: none;
-}
+} */
 
 main {
     height: 2.8rem;
     /* border-bottom: 1px solid var(--color-light); */
     color: var(--color-dark-variant);
 }
-
-/* main  tr:last-child{
-    border: none;
-} */
-
+/* 
 main .recent-orders a{
     text-align: center;
     display: block;
     margin: 1rem auto;
     border-radius: var(--border-radius-1);
     color: var(--color-primary);
-}
+} */
 
 /* RIGHT */
 
@@ -475,7 +470,7 @@ main .recent-orders a{
 }
 
 /* RECENT UPDATES */
-
+/* 
 .right .recent-updates{
     margin-top: 1rem;
 }
@@ -501,10 +496,10 @@ main .recent-orders a{
     grid-template-columns: 2.6rem auto;
     gap: 1rem;
     margin-bottom: 1rem;
-}
+} */
 
 /* SALES ANALYTICS */
-
+/* 
 .right .sales-analytics{
     margin-top: 2rem;
 }
@@ -570,7 +565,7 @@ main .recent-orders a{
 
 .right .sales-analytics .add-product div h3{
     font-weight: 600;
-}
+} */
 
 /* MEDIA QUERIES LAPTOP*/
 
@@ -626,6 +621,14 @@ main .recent-orders a{
     /* main{
         display: none;
     } */
+}
+
+@media screen and (max-width: 1000px) {
+    .search-player{
+        width: 50%;
+        margin-left: 60%;
+    }
+    
 }
 
 /* MEDIA QUERIES MOBILE*/
@@ -719,7 +722,12 @@ main .recent-orders a{
     .right .top .theme-toggler{
         width: 4.4rem;
         position: absolute;
-        left: 66%;
+        left: 20%;
+    }
+
+    .search-player{
+        width: 100%;
+        margin-left: 0;
     }
 
     .right .profile .info{
@@ -740,7 +748,21 @@ main .recent-orders a{
     }
 }
 
-/* my css */
+@media screen and (max-width: 576px) {
+    .final-score{
+        font-size: x-large;
+    }
+
+    .pt-5{
+        padding: 0 !important;
+        padding-top: 3em !important;
+    }
+    
+    .search-player{
+        width: 70%;
+        margin-left: 30%;
+    }
+}
 
 .content{
     margin-top: 3rem;
@@ -748,6 +770,8 @@ main .recent-orders a{
     margin-left: auto;
     margin-right: auto;
 }
+
+/* MATCHES */
 
 .card{
     border: none !important;
@@ -786,8 +810,7 @@ main .recent-orders a{
 .pic{
     border-radius: 50%;
     max-width: 2.5em;
-    /* margin-top: auto;
-    margin-bottom: auto; */
+    display: inline;
 }
 
 th{
@@ -823,29 +846,163 @@ caption{
 }
 
 .header{
-    /* width: 600px; */
     width: 100%;
     max-width: 600px;
+}
+
+.form-control{
+    background: transparent;
+    color: var(--color-dark) !important;
+    background: var(--color-light);
+    border-radius: var(--border-radius-1);
+    font-size: smaller;
 }
 
 .form-control:focus{
     border-color: none;
     box-shadow: none;
-    border: 1px solid var(--color-dark);
+    border: 1px solid var(--color-dark-variant);
+    background-color: var(--color-white);
 }
 
 .btn{
-    /* color: var(--color-primary); */
     background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    color: var(--color-white);
 }
 
-@media screen and (max-width: 576px) {
-    .final-score{
-        font-size: x-large;
-    }
+/* SEARCH */
 
-    .pt-5{
-        padding: 0 !important;
-        padding-top: 3em !important;
-    }
+.profile-header{
+    height: 18em;
+    background: 
+    linear-gradient(
+      rgba(77, 77, 77, 0.4), 
+      rgba(78, 78, 78, 0.4)
+    ),
+    url("../assets/hoopz_header_pic.png")
+    center 60%
+    no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: var(--border-radius-1);
+}
+
+.profile-header-content{
+    padding: 3em 4em 0 4em;
+}
+
+.profile-pic{
+    width: 8rem;
+    background-color: #363949;
+    border-radius: var(--border-radius-1);
+}
+
+.btn-neutral{
+    background-color: var(--color-score);
+    border: 2px solid var(--color-score);
+}
+
+.btn-favorite{
+    background-color: transparent;
+    border: 1px solid var(--color-warning);
+    color: var(--color-warning);
+}
+
+.btn-favorite:hover{
+    color: var(--color-warning);
+}
+
+.profile-bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-left: 4em;
+    background-color: rgba(54, 57, 73, 0.6);
+    color: var(--color-white);
+    border-bottom-left-radius: var(--border-radius-1);
+    border-bottom-right-radius: var(--border-radius-1);
+}
+
+.profile-btn{
+    padding: 1em;
+    background-color: transparent;
+    color: var(--color-white);
+    font-weight: bold;
+}
+
+.active{
+    background-color: var(--color-white);
+    color: var(--color-dark);
+}
+
+.card-border{
+    background-color: var(--color-dark-variant);
+}
+
+.sort-btn{
+    color: var(--color-dark);
+    padding: .5em 2em;
+    background-color: var(--color-white);
+}
+
+.card-display{
+    border-top: .2em solid rgba(0, 0, 0, 0.1);
+    border-bottom: .2em solid rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.selected{
+    color: var(--color-warning);
+    border-bottom: .4em solid var(--color-danger);
+}
+
+.victory-card{
+    border-left: .8em solid var(--color-success);
+}
+
+.defeat-card{
+    border-left: .8em solid var(--color-danger);
+}
+
+.defeat{
+    color: var(--color-danger);
+}
+
+.victory{
+    color: var(--color-success);
+}
+
+.neutral{
+    color: var(--color-score);
+}
+
+.card-pic{
+    border-radius: 50%;
+    border: 2px solid var(--color-warning);
+    max-width: 5em;
+}
+
+.dropdown{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    right: 0;
+    padding: var(--padding-1);
+    font-weight: bolder;
+    color: var(--color-white);
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.dropdown:hover{
+    cursor: pointer;
+}
+
+.dropdown-victory{
+    background-color: var(--color-success);
+}
+
+.dropdown-defeat{
+    background-color: var(--color-danger);
 }

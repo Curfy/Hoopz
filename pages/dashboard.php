@@ -35,7 +35,7 @@ if (!isset($_COOKIE['isLogin'])) {
             <div class="top">
                 <div class="logo">
                     <img src="./images/hoopzlogo.png" alt="">
-                    <h2 class="danger" style = "font-weight: bold">HO<span class="score">OPZ</span></h2>
+                    <h2 class="danger" style="font-weight: bold">HO<span class="score">OPZ</span></h2>
                 </div>
                 <div class="close" id="close-btn">
                     <span class="material-icons-sharp">close</span>
@@ -92,10 +92,15 @@ if (!isset($_COOKIE['isLogin'])) {
         <main>
             <div class="right">
                 <h1 class="ps-5">Dashboard</h1>
-                <!-- <div class="text">
-                    <input type="text" placeholder="Search Player">
-                </div> -->
                 <div class="top">
+                    <!-- <div class="text">
+                        <input type="text" placeholder="Search Player">
+                    </div> -->
+                    <form action="search.php">
+                        <div class="search-player">
+                            <input class="form-control" type="search" placeholder="🔍 Search Player" aria-label="Search">
+                        </div>
+                    </form>
                     <button id="menu-btn">
                         <span class="material-icons-round">menu</span>
                     </button>

@@ -35,7 +35,7 @@ if (!isset($_COOKIE['isLogin'])) {
             <div class="top">
                 <div class="logo">
                     <img src="./images/hoopzlogo.png" alt="">
-                    <h2 class="danger" style = "font-weight: bold">HO<span class="score">OPZ</span></h2>
+                    <h2 class="danger" style="font-weight: bold">HO<span class="score">OPZ</span></h2>
                 </div>
                 <div class="close" id="close-btn">
                     <span class="material-icons-sharp">close</span>
@@ -91,7 +91,7 @@ if (!isset($_COOKIE['isLogin'])) {
 
         <main>
             <div class="right">
-                <h1 class="ps-5">Results For: Zenovain</h1>
+                <h1 class="ps-5">Zenovain</h1>
                 <!-- <div class="text">
                     <input type="text" placeholder="Search Player">
                 </div> -->
@@ -116,6 +116,105 @@ if (!isset($_COOKIE['isLogin'])) {
                 </div>
             </div>
 
+            <div class="content">
+                <div class="profile-header">
+                    <div class="profile-header-content">
+                        <div class="row">
+                            <div class="col-auto">
+                                <img class="profile-pic" src="images/zenovain.jpg" alt="Profile-pic">
+                            </div>
+                            <div class="col text-light">
+                                <h1>Zenovain</h1>
+                                <button class="btn btn-neutral">Up to Date</button>
+                                <button class="btn btn-favorite">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24" style=" fill:#ffbb55;">
+                                        <path d="M 6.0097656 2 C 4.9143111 2 4.0097656 2.9025988 4.0097656 3.9980469 L 4 22 L 12 19 L 20 22 L 20 20.556641 L 20 4 C 20 2.9069372 19.093063 2 18 2 L 6.0097656 2 z M 6.0097656 4 L 18 4 L 18 19.113281 L 12 16.863281 L 6.0019531 19.113281 L 6.0097656 4 z"></path>
+                                    </svg>
+                                    Favorite
+                                </button>
+                                <br>
+                                <div class="mt-3">
+                                    Last Updated: 1 min ago
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-bottom">
+                        <button class="profile-btn active">Overview</button>
+                        <button class="profile-btn">Matches</button>
+                    </div>
+                </div>
+                <div class="profile-details mt-2">
+                    <div class="row g-1">
+                        <div class="col">
+                            <div class="card-body">
+                                <div class="">
+                                    <button class="sort-btn selected">All</button>
+                                    <button class="sort-btn">1v1</button>
+                                    <button class="sort-btn">2v2</button>
+                                    <button class="sort-btn">3v3</button>
+                                    <button class="sort-btn">4v4</button>
+                                </div>
+                                <hr>
+                                <div>Match history (218 matches)</div>
+                            </div>
+                            <!-- CARDS TEMPLATE -->
+                            <div id="template">
+                                <div class="card-display ps-5 card-body victory-card">
+                                    <div class="row">
+                                        <div class="col-auto">
+                                            <div class="row">
+                                                <div class="col-auto">
+                                                    <h2 class="success">Victory</h2>
+                                                    <h4>5V5</h4>
+                                                    <h4>04/04/2022</h4>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <img src="./images/zenovain.jpg" alt="profile-pic" class="card-pic">
+                                                </div>
+                                                <div class="col">
+                                                    <br>
+                                                    <h4 class="neutral fw-bold">Zenovain</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-5">
+                                            <h2 class="victory text-center pt-4">21-10</h2>
+                                        </div>
+                                        <div class="col me-5">
+                                            <div class="row row-cols-2 g-3">
+                                                <div class="col">
+                                                    <img src="images/phronex.png" alt="profile-pic" class="pic">
+                                                    White horse
+                                                </div>
+                                                <div class="col">
+                                                    <img src="images/phronex.png" alt="profile-pic" class="pic">
+                                                    White horse
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="dropdown dropdown-victory d-flex">
+                                        V
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- END OF CARDS TEMPLATE -->
+
+                            <!-- benchmark to stack template  -->
+                            <div id="toStack"></div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card-body">
+                                RANK
+                            </div>
+                            <div class="statistics">
+                                stats here
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </main>
         <!-- END OF MAIN -->
