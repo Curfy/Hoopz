@@ -7,6 +7,7 @@ session_start();
 
 $username = $_POST['username'];
 $password = $_POST['password'];
+$checkbox = $_POST['checkbox'];
 
 $hashedpassword = hash('md5', $password);
 // $username = "zenovain";
@@ -21,12 +22,13 @@ $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
 if($result){
 
-    $hashedtoken = base64_encode(hash('md5', $result['username'] . $_SERVER['HTTP_USER_AGENT'] . time()));
-
     // if($checkbox == 'true'){
     //     $_SESSION['token'] = $hashed;
     // }
-    
+    $hashedtoken = '';
+    if($checkbox == 'true'){
+        $hashedtoken = base64_encode(hash('md5', $result['username'] . $_SERVER['HTTP_USER_AGENT'] . time()));
+    }
     
     // $ip = $_SERVER['REMOTE_ADDR'];
     $ip = '112.200.149.23';

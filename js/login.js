@@ -41,6 +41,7 @@ $(document).ready(function(){
          data:{
             "username": usernameForm.value,
             "password": passwordForm.value,
+            "checkbox": rememberCheckbox.checked,
          },
       success: function(response){
             if(response.status == "201"){
