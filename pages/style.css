@@ -762,6 +762,27 @@ main .recent-orders a{
         width: 70%;
         margin-left: 30%;
     }
+
+    .profile-header{
+        height: 25em !important;
+    }
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 
 .content{
@@ -892,10 +913,39 @@ caption{
     padding: 3em 4em 0 4em;
 }
 
-.profile-pic{
+.profile-pic-container{
+    position: relative;
+}
+
+.search-profile-pic{
     width: 8rem;
     background-color: #363949;
     border-radius: var(--border-radius-1);
+}
+
+.search-profile-pic:hover{
+    cursor: pointer;
+}
+
+.profile-icon-container{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(54, 57, 73, 0.3);
+    width: 100%;
+}
+
+.profile-icon-badge{
+    max-width: 4em;
+}
+
+.profile-icon-badge:hover{
+    cursor: pointer;
+}
+
+.profile-icon-num{
+    max-width: 4em;
+    background-color: var(--color-light);
+    color: var(--color-white);
 }
 
 .btn-neutral{
@@ -949,7 +999,6 @@ caption{
 .card-display{
     border-top: .2em solid rgba(0, 0, 0, 0.1);
     border-bottom: .2em solid rgba(0, 0, 0, 0.1);
-    position: relative;
 }
 
 .selected{
@@ -981,18 +1030,24 @@ caption{
     border-radius: 50%;
     border: 2px solid var(--color-warning);
     max-width: 5em;
+    position: relative;
 }
 
-.dropdown{
-    position: absolute;
+.enemy-pic{
+    max-width: 2em;
+}
+
+.dropdown-pic{
+    border-radius: 50%;
+    max-width: 1.8em;
+    display: inline;
+}
+
+.mydropdown{
     height: 100%;
-    top: 0;
-    right: 0;
     padding: var(--padding-1);
     font-weight: bolder;
     color: var(--color-white);
-    vertical-align: middle;
-    display: inline-block;
 }
 
 .dropdown:hover{
@@ -1005,4 +1060,47 @@ caption{
 
 .dropdown-defeat{
     background-color: var(--color-danger);
+}
+
+.accordion-hidden{
+    height: 0;
+    transition: .2s ease-in;
+    display: block;
+    overflow-y: hidden;
+}
+
+.down{
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+}
+
+.card-collapse{
+    border: .2em solid rgba(0, 0, 0, 0.1);
+    border-top: none;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.rank-logo{
+    max-width: 10em;
+}
+
+.bar{
+    position: relative;
+    width: 100%;
+    background-color: var(--color-light);
+    height: .4em;
+}
+
+.bar-fill{
+    position: absolute;
+    width: 50%;
+    background-color: var(--color-success);
+    height: .4em;
+    border-top-right-radius: .4em;
+    border-bottom-right-radius: .4em;
+}
+
+.bar-fill-dark{
+    background-color: var(--color-dark-variant);
 }

@@ -121,9 +121,26 @@ if (!isset($_COOKIE['isLogin'])) {
                     <div class="profile-header-content">
                         <div class="row">
                             <div class="col-auto">
-                                <img class="profile-pic" src="images/zenovain.jpg" alt="Profile-pic">
+                                <div class="profile-pic-container">
+                                    <img class="search-profile-pic" src="images/zenovain.jpg" alt="Profile-pic">
+                                    <div class="profile-icon-container">
+                                        <div class="row justify-content-between">
+                                            <div class="col">
+                                                <div class="profile-icon-badge">
+                                                    <img src="./images/mythic-logo.png" alt="badge">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <br>
+                                                <div class="profile-icon-num">
+                                                    <span>5967</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col text-light">
+                            <div class="col-sm text-light">
                                 <h1>Zenovain</h1>
                                 <button class="btn btn-neutral">Up to Date</button>
                                 <button class="btn btn-favorite">
@@ -145,7 +162,7 @@ if (!isset($_COOKIE['isLogin'])) {
                     </div>
                 </div>
                 <div class="profile-details mt-2">
-                    <div class="row g-1">
+                    <div class="row g-2">
                         <div class="col">
                             <div class="card-body">
                                 <div class="">
@@ -159,43 +176,67 @@ if (!isset($_COOKIE['isLogin'])) {
                                 <div>Match history (218 matches)</div>
                             </div>
                             <!-- CARDS TEMPLATE -->
-                            <div id="template">
-                                <div class="card-display ps-5 card-body victory-card">
-                                    <div class="row">
+                            <div id="template" class="d-none">
+                                <div id="card-template" class="mt-2">
+                                    <div class="row g-0">
+                                        <div class="col">
+                                            <div class="card-accordion">
+                                                <div class="card-display ps-5 card-body">
+                                                    <div class="row justify-content-between">
+                                                        <div class="col-auto">
+                                                            <div class="row">
+                                                                <div class="col-auto">
+                                                                    <h2 class="status">default</h2>
+                                                                    <h4>5V5</h4>
+                                                                    <h4>04/04/2022</h4>
+                                                                </div>
+                                                                <div class="col-auto">
+                                                                    <img src="./images/zenovain.jpg" alt="profile-pic" class="card-pic">
+                                                                </div>
+                                                                <div class="col">
+                                                                    <br>
+                                                                    <h4 class="neutral fw-bold">Zenovain</h4>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <!-- <h2 class="victory text-center pt-4">21-10</h2> -->
+                                                            <h2 class="score text-center pt-4">
+                                                                <span class="player-score">21</span>-<span class="enemy-score">10</span>
+                                                            </h2>
+                                                        </div>
+                                                        <div class="col-md">
+                                                            <div class="row row-cols-2 g-3 text-end">
+                                                                <div class="col">
+                                                                    <img src="images/phronex.png" alt="profile-pic" class="pic enemy-pic">
+                                                                    White horse
+                                                                </div>
+                                                                <div class="col">
+                                                                    <img src="images/phronex.png" alt="profile-pic" class="pic enemy-pic">
+                                                                    White horse
+                                                                </div>
+                                                                <div class="col">
+                                                                    <img src="images/phronex.png" alt="profile-pic" class="pic enemy-pic">
+                                                                    White horse
+                                                                </div>
+                                                                <div class="col">
+                                                                    <img src="images/phronex.png" alt="profile-pic" class="pic enemy-pic">
+                                                                    White horse
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="col-auto">
-                                            <div class="row">
-                                                <div class="col-auto">
-                                                    <h2 class="success">Victory</h2>
-                                                    <h4>5V5</h4>
-                                                    <h4>04/04/2022</h4>
-                                                </div>
-                                                <div class="col-auto">
-                                                    <img src="./images/zenovain.jpg" alt="profile-pic" class="card-pic">
-                                                </div>
-                                                <div class="col">
-                                                    <br>
-                                                    <h4 class="neutral fw-bold">Zenovain</h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-5">
-                                            <h2 class="victory text-center pt-4">21-10</h2>
-                                        </div>
-                                        <div class="col me-5">
-                                            <div class="row row-cols-2 g-3">
-                                                <div class="col">
-                                                    <img src="images/phronex.png" alt="profile-pic" class="pic">
-                                                    White horse
-                                                </div>
-                                                <div class="col">
-                                                    <img src="images/phronex.png" alt="profile-pic" class="pic">
-                                                    White horse
-                                                </div>
-                                            </div>
+                                            <button type="button" class="mydropdown" value="card-template-collapse">
+                                                <img src="https://img.icons8.com/ios/50/ffffff/expand-arrow--v1.png" class="dropdown-pic" alt="dropdown-icon" />
+                                            </button>
                                         </div>
                                     </div>
-                                    <div class="dropdown dropdown-victory d-flex">
-                                        V
+                                    <div id="card-template-collapse" class="accordion-hidden">
+                                        <div class="card-collapse card-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime tempora laudantium rem? Temporibus totam nostrum necessitatibus, ab dolorem natus! Aliquam placeat vitae libero explicabo sint quod quidem aspernatur similique ipsa? Placeat blanditiis quo quos similique deserunt, est doloremque iure repellendus nemo ullam hic earum pariatur. Quos quasi labore, quas et laboriosam maiores soluta eaque ipsa eum accusamus incidunt nihil esse?</div>
                                     </div>
                                 </div>
                             </div>
@@ -204,24 +245,149 @@ if (!isset($_COOKIE['isLogin'])) {
                             <!-- benchmark to stack template  -->
                             <div id="toStack"></div>
                         </div>
-                        <div class="col-3">
+                        <div class="col-lg-3">
                             <div class="card-body">
-                                RANK
+                                <div class="row m-3">
+                                    <div class="col-auto">
+                                        <img src="./images/mythic-logo.png" class="rank-logo" alt="rank-logo">
+                                    </div>
+                                    <div class="col">
+                                        <h4 class="fw-bold">Tier</h4>
+                                        <div class="row justify-content-between">
+                                            <div class="col">
+                                                <h2 class="defeat">Mythic</h2>
+                                            </div>
+                                            <div class="col text-end">
+                                                <h4>1814 LP</h4>
+                                            </div>
+                                        </div>
+                                        <div class="bar">
+                                            <div id="bar-tier" class="bar-fill"></div>
+                                        </div>
+                                        <div class="row justify-content-between">
+                                            <div class="col">
+                                                <h4>0.000001%</h4>
+                                            </div>
+                                            <div class="col text-end">
+                                                <h4>#1</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="statistics">
-                                stats here
+                            <div class="statistics p-3 pt-4">
+                                <div class="row row-cols-2 g-4 justify-content-between">
+                                    <div class="col">
+                                        <div class="row justify-content-between">
+                                            <div class="col">
+                                                <h5 class="victory">Wins</h5>
+                                            </div>
+                                            <div class="col text-end">
+                                                <h5 id="stat-wins">1814 LP</h5>
+                                            </div>
+                                        </div>
+                                        <div class="bar">
+                                            <div id="bar-wins" class="bar-fill"></div>
+                                        </div>
+                                        <h4 id="percent-wins">Top 69%</h4>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row justify-content-between">
+                                            <div class="col">
+                                                <h5>Win Rate</h5>
+                                            </div>
+                                            <div class="col text-end">
+                                                <h5 id="stat-win-rate">1814 LP</h5>
+                                            </div>
+                                        </div>
+                                        <div class="bar">
+                                            <div id="bar-win-rate" class="bar-fill bar-fill-dark"></div>
+                                        </div>
+                                        <h4 id="percent-win-rate">Top 69%</h4>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row justify-content-between">
+                                            <div class="col">
+                                                <h5>Losses</h5>
+                                            </div>
+                                            <div class="col text-end">
+                                                <h5 id="stat-losses">1814 LP</h5>
+                                            </div>
+                                        </div>
+                                        <div class="bar">
+                                            <div id="bar-losses" class="bar-fill bar-fill-dark"></div>
+                                        </div>
+                                        <h4 id="percent-losses">Top 69%</h4>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row justify-content-between">
+                                            <div class="col">
+                                                <h5>Shoot Rate</h5>
+                                            </div>
+                                            <div class="col text-end">
+                                                <h5 id="stat-shoot-rate">1814 LP</h5>
+                                            </div>
+                                        </div>
+                                        <div class="bar">
+                                            <div id="bar-shoot-rate" class="bar-fill bar-fill-dark"></div>
+                                        </div>
+                                        <h4 id="percent-shoot-rate">Top 69%</h4>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row justify-content-between">
+                                            <div class="col">
+                                                <h5>Streak</h5>
+                                            </div>
+                                            <div class="col text-end">
+                                                <h5 id="stat-streak">1814 LP</h5>
+                                            </div>
+                                        </div>
+                                        <div class="bar">
+                                            <div id="bar-streak" class="bar-fill bar-fill-dark"></div>
+                                        </div>
+                                        <h4 id="percent-streak">Top 69%</h4>
+                                    </div>
+                                    <div class="col">
+                                        <div class="row justify-content-between">
+                                            <div class="col">
+                                                <h5>Ave Rank</h5>
+                                            </div>
+                                            <div class="col text-end">
+                                                <h5 id="stat-ave">1814 LP</h5>
+                                            </div>
+                                        </div>
+                                        <div class="bar">
+                                            <div id="bar-ave" class="bar-fill bar-fill-dark"></div>
+                                        </div>
+                                        <h4 id="percent-ave">Top 69%</h4>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <nav>
+                <ul class="pagination justify-content-center mt-5">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="m-5"><br></div>
         </main>
         <!-- END OF MAIN -->
     </div>
 
     <script src="./index.js"></script>
     <script src="../js/main.js"></script>
+    <script src="./search.js"></script>
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
