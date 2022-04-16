@@ -794,7 +794,7 @@ caption{
 }
 
 .sort-btn{
-    color: var(--color-dark);
+    color: var(--color-dark-variant);
     padding: .5em 2em;
     background-color: var(--color-white);
 }
@@ -805,8 +805,7 @@ caption{
 }
 
 .selected{
-    color: var(--color-warning);
-    border-bottom: .4em solid var(--color-danger);
+    border-bottom: .4em solid var(--color-primary);
 }
 
 .victory-card{
@@ -906,4 +905,26 @@ caption{
 
 .bar-fill-dark{
     background-color: var(--color-dark-variant);
+}
+
+/* PAGINATION */
+.page-group{
+    display: flex;
+    justify-content: center;
+    margin: 3em;
+}
+
+.group-item{
+    padding: 1em 2em;
+    display: inline;
+    background-color: var(--color-white);
+    color: var(--color-dark-variant);
+    margin-right: 1em;
+    font-weight: bold;
+    transition: all 100ms ease;
+    box-shadow: var(--box-shadow);
+}
+
+.group-item:hover{
+    outline: .1em solid var(--color-primary);
 }

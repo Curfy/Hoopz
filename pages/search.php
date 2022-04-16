@@ -265,6 +265,26 @@ if (!isset($_COOKIE['isLogin'])) {
 
                             <!-- benchmark to stack template  -->
                             <div id="toStack"></div>
+
+                            <nav>
+                                <ul class="page-group">
+                                    <a href="#">
+                                        <li class="group-item"> < </li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="group-item selected">1</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="group-item">2</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="group-item">3</li>
+                                    </a>
+                                    <a href="#">
+                                        <li class="group-item"> > </li>
+                                    </a>
+                                </ul>
+                            </nav>
                         </div>
                         <div id="column-stat" class="col-lg-3">
                             <div class="card-body">
@@ -388,19 +408,7 @@ if (!isset($_COOKIE['isLogin'])) {
                     </div>
                 </div>
             </div>
-            <nav>
-                <ul class="pagination justify-content-center mt-5">
-                    <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                    </li>
-                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
-                    </li>
-                </ul>
-            </nav>
+
             <div class="m-5"><br></div>
         </main>
         <!-- END OF MAIN -->
