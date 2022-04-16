@@ -677,7 +677,7 @@ caption{
 .form-control{
     background: transparent;
     color: var(--color-dark) !important;
-    background: var(--color-light);
+    background: var(--color-background);
     border-radius: var(--border-radius-1);
     font-size: smaller;
 }
