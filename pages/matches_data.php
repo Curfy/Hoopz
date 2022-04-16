@@ -152,5 +152,28 @@
 <!-- benchmark to stack templates -->
 <div id="toStack"></div>
 
+<nav>
+	<ul class="page-group">
+		<a href="#">
+			<li class="group-item">
+				< </li>
+		</a>
+		<a href="#">
+			<li class="group-item selected">1</li>
+		</a>
+		<a href="#">
+			<li class="group-item">2</li>
+		</a>
+		<a href="#">
+			<li class="group-item">3</li>
+		</a>
+		<a href="#">
+			<li class="group-item"> > </li>
+		</a>
+	</ul>
+</nav>
+
+<div class="m-5"><br></div>
+
 <!-- js to handle dynamic content and calendar -->
 <script src="./matches_data.js"></script>

@@ -52,10 +52,26 @@ load(3, 22); // score of player,enemy
 
 
 // FOR BAR FILL STATISTICS
-// function fill(id, percent, color){
-// 	$("#"+id).css({"width": percent.toString(), "background-color": "#"})
-// }
-// $(".bar-fill")
+// change width property of .bar-fill
+
+
+// FOR #column-stat
+if ($(window).width() < 992){
+	$("#column-stat").addClass("order-first");
+}else{
+	if ($("#column-stat").hasClass("order-first")){
+		$("#column-stat").removeClass("order-first");
+	}
+}
+$( window ).resize(function() {
+  if ($(window).width() < 992){
+		$("#column-stat").addClass("order-first");
+	}else{
+		if ($("#column-stat").hasClass("order-first")){
+			$("#column-stat").removeClass("order-first");
+		}
+	}
+});
 
 
 // FOR DROPDOWN
