@@ -39,5 +39,49 @@ $(document).ready(function(){
         themeToggler.querySelector('span:nth-child(2)').classList.toggle('active');
     })
 
+});
+
+// $(".search-bar-container, .search-icon").on("click", function(){
+//     $(".search-bar-container").css({
+//         "display": "block", 
+//         "position": "relative", 
+//         "width": "100%", 
+//         "z-index": "1"
+//     });
+
+//     $(".search-bar").removeClass("search-width-100");
+// })
+
+function setSearchProperty(){
+    $(".search-bar-container").css({
+        "display": "block", 
+        "position": "relative", 
+        "width": "100%", 
+        "z-index": "1"
+    });
+
+    $(".search-bar").removeClass("search-width-100");
+};
+
+function unsetSearchProperty(){
+    $(".search-bar-container").css({
+        "display": "", 
+        "position": "", 
+        "width": "", 
+        "z-index": ""
+    });
+
+    $(".search-bar").addClass("search-width-100");
+};
+
+$(".search-icon").on("click", function(){  
+    if ($(window).width() <= 1400 && $(window).width() > 768){
+        setSearchProperty();
+    }
 })
 
+$("#main-body").on("click", function(){
+    if (!$(".search-bar").hasClass("search-width-100") && $(window).width() <= 1400 && $(window).width() > 768){
+        unsetSearchProperty();
+    };
+})
