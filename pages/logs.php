@@ -13,20 +13,21 @@ if (!isset($_COOKIE['isLogin'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoopz</title>
 
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
     <!-- MATERIAL ICONS -->
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
 
-    <!-- for calendar plugin -->
-    <link href="../node_modules/bulma-calendar/dist/css/bulma-calendar.min.css" rel="stylesheet">
-
-    <!-- STYLESHEET -->
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CUSTOM STYLESHEET -->
     <link rel="stylesheet" href="./style.css">
 
+    <!-- JQUERY JAVASCRIPT -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <!-- for calendar plugin -->
-    <script src="../node_modules/bulma-calendar/dist/js/bulma-calendar.min.js"></script>
+    <!-- For Calendar Plugin -->
+    <link href = "https://cdn.jsdelivr.net/npm/bulma-calendar@6.0.7/dist/css/bulma-calendar.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bulma-calendar@6.1.18/dist/js/bulma-calendar.min.js"></script>
 </head>
 
 <body>
@@ -43,6 +44,27 @@ if (!isset($_COOKIE['isLogin'])) {
             </div>
 
             <div class="sidebar">
+
+                <a>
+                    <span>
+                        <form action="search.php">
+                            <div class="row g-1 mb-2">
+                                <div class="col-auto">
+                                    <label for="search-player" class="search-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="30" viewBox="0 0 30 30" style=" fill:#677483;">
+                                            <path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"></path>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="col">
+                                    <div class="search-bar-container">
+                                        <input id="search-player" type="text" placeholder="Search Player" class="search-bar search-width-100">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </span>
+                </a>
 
                 <a href="dashboard.php">
                     <span class="material-icons-sharp">grid_view</span>
@@ -124,8 +146,7 @@ if (!isset($_COOKIE['isLogin'])) {
     </div>
 
     <script src="./index.js"></script>
-    <script src="../js/main.js"></script>
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/logout.js"></script>
 </body>
 
 </html>

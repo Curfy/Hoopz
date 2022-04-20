@@ -1,9 +1,9 @@
 <?php
 include("./methods/db.php");
-// $string = "Kenneth";
+// $string = "000";
 // $hashed = base64_encode(hash('md5', $string . $_SERVER['HTTP_USER_AGENT'] . time()));
-// echo $hashed;
-// echo hash('md5', 123);
+// // echo $hashed;
+// echo hash('md5', $string);
 
 // $sql = "INSERT INTO matches (
 //     userid,
@@ -49,12 +49,12 @@ include("./methods/db.php");
 
 
 
-$string = '11-22';
-$firstnum = (int)substr($string, 0, strpos($string, '-'));
-$lastnum = (int)substr($string, strpos($string, "-")+1, strlen($string));
+// $string = '11-22';
+// $firstnum = (int)substr($string, 0, strpos($string, '-'));
+// $lastnum = (int)substr($string, strpos($string, "-")+1, strlen($string));
 
-echo $firstnum;
-echo $lastnum;
+// echo $firstnum;
+// echo $lastnum;
 
 ?>
 

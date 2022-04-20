@@ -13,20 +13,22 @@ if (!isset($_COOKIE['isLogin'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoopz</title>
 
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
     <!-- MATERIAL ICONS -->
     <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
 
-    <!-- for calendar plugin -->
-    <link href="../node_modules/bulma-calendar/dist/css/bulma-calendar.min.css" rel="stylesheet">
-
-    <!-- STYLESHEET -->
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CUSTOM STYLESHEET -->
     <link rel="stylesheet" href="./style.css">
 
+    <!-- JQUERY JAVASCRIPT -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-    <!-- for calendar plugin -->
-    <script src="../node_modules/bulma-calendar/dist/js/bulma-calendar.min.js"></script>
+    <!-- For Calendar Module -->
+    <link href = "https://cdn.jsdelivr.net/npm/bulma-calendar@6.0.7/dist/css/bulma-calendar.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bulma-calendar@6.1.18/dist/js/bulma-calendar.min.js"></script>
+
 </head>
 
 <body>
@@ -147,8 +149,7 @@ if (!isset($_COOKIE['isLogin'])) {
     </div>
 
     <script src="./index.js"></script>
-    <script src="../js/main.js"></script>
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/logout.js"></script>
 </body>
 
 </html>

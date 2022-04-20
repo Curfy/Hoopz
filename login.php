@@ -14,17 +14,34 @@ if(isset($_COOKIE['token'])){
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Primary Meta Tags -->
+    <title>Hoopz</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.88.1">
-    <title>Hoopz Signin</title>
-    
+    <meta name="title" content="Hoopz">
+    <meta name="description" content="At Hoopz, The top roblox basketball players in the world have gathered to compete for the best.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Roblox, Hoopz, Hoops, Phenom, Basketball, Cyberprism, XBOX, pc, controller, xbox360, xbon one, 1 player, 2 players, 3 players, 4 players, 5 players, multiplayer, playhoopz, playhoopz.com">
+    <meta name="author" content="Jaru#4328">
+    <meta name="generator" content="Jaru#4328">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://playhoopz.com/">
+    <meta property="og:title" content="Hoopz">
+    <meta property="og:description" content="At Hoopz, The top roblox basketball players in the world have gathered to compete for the best.">
+    <meta property="og:image" content="https://playhoopz.com/assets/hoops.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://playhoopz.com/">
+    <meta property="twitter:title" content="Hoopz">
+    <meta property="twitter:description" content="At Hoopz, The top roblox basketball players in the world have gathered to compete for the best.">
+    <meta property="twitter:image" content="https://playhoopz.com/assets/hoops.png">
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
     <!-- Bootstrap core CSS -->
-    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <!-- Signin CSS -->
     <link href="./css/signin.css" rel="stylesheet">
@@ -46,9 +63,12 @@ if(isset($_COOKIE['token'])){
 
       .bgdesign{
       background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-      url(./assets/hoopz.png);
+      url("https://media.discordapp.net/attachments/818830177898725409/965821661477752832/HoopzThumbnail_1.png");
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 100vw 100vh;
       }
     </style>
 
@@ -90,7 +110,7 @@ if(isset($_COOKIE['token'])){
     
   </form>
 </main>
-  <script src="./js/jquery.js"></script>
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
   <script src = "./js/login.js"></script>
   
 </body>
