@@ -26,7 +26,7 @@
     --card-padding: 1.8rem;
     --padding-1: 1.2rem;
 
-    --box-shadow: 0 2rem 3rem var(--color-light);
+    --box-shadow: 0 1em 2em var(--color-light);
 }
 
 /* DARK THEME VARIABLES */
@@ -548,7 +548,7 @@ main {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: var(--color-light); 
 }
  
 ::-webkit-scrollbar-thumb {
@@ -560,7 +560,7 @@ main {
 }
 
 .content{
-    margin-top: 3rem;
+    margin-top: 5rem;
     width: 95%;
     margin-left: auto;
     margin-right: auto;
@@ -784,11 +784,6 @@ caption{
     font-weight: bold;
 }
 
-.active{
-    background-color: var(--color-white);
-    color: var(--color-dark);
-}
-
 .card-border{
     background-color: var(--color-dark-variant);
 }
@@ -802,10 +797,6 @@ caption{
 .card-display{
     border-top: .2em solid rgba(0, 0, 0, 0.1);
     border-bottom: .2em solid rgba(0, 0, 0, 0.1);
-}
-
-.selected{
-    border-bottom: .4em solid var(--color-primary);
 }
 
 .victory-card{
@@ -927,4 +918,54 @@ caption{
 
 .group-item:hover{
     outline: .1em solid var(--color-primary);
+}
+
+/* LOGS */
+.border-card{
+    padding: var(--card-padding);
+    border: 1px solid var(--color-light);
+    border-radius: var(--border-radius-1);
+    height: auto;
+}
+
+.logs-btn-tab{
+    padding: 1em 2em;
+    background-color: var(--color-white);
+    color: var(--color-dark-variant);
+    margin-right: 1em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    transition: all 100ms ease;
+}
+
+.logs-btn-tab:hover{
+    outline: .1em solid var(--color-primary);
+}
+
+.active{
+    background-color: var(--color-white);
+    color: var(--color-dark);
+}
+
+.selected{
+    border-bottom: .4em solid var(--color-primary);
+}
+
+.logs-card-container{
+    max-height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.logs-card{
+    border-bottom: 1px solid var(--color-light);
+    margin-top: 1em;
+    position: relative;
+}
+
+.float-time{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
