@@ -47,22 +47,25 @@ if (!isset($_COOKIE['isLogin'])) {
 
                 <a>
                     <span>
-                        <form action="search.php">
-                            <div class="row g-1 mb-2">
-                                <div class="col-auto">
-                                    <label for="search-player" class="search-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="30" viewBox="0 0 30 30" style=" fill:#677483;">
-                                            <path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"></path>
-                                        </svg>
-                                    </label>
-                                </div>
-                                <div class="col">
-                                    <div class="search-bar-container">
-                                        <input id="search-player" type="text" placeholder="Search Player" class="search-bar search-width-100">
-                                    </div>
-                                </div>
+                        <label for="player-search" class="search-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="30" viewBox="0 0 30 30" style=" fill:#677483;">
+                                <path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"></path>
+                            </svg>
+                        </label>
+                        <div class="sidenav-search-container mb-3">
+                            <div class="content-search">
+                                <label for="player-search">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24" style=" fill:#677483;">
+                                        <path d="M 9 2 C 5.1458514 2 2 5.1458514 2 9 C 2 12.854149 5.1458514 16 9 16 C 10.747998 16 12.345009 15.348024 13.574219 14.28125 L 14 14.707031 L 14 16 L 20 22 L 22 20 L 16 14 L 14.707031 14 L 14.28125 13.574219 C 15.348024 12.345009 16 10.747998 16 9 C 16 5.1458514 12.854149 2 9 2 z M 9 4 C 11.773268 4 14 6.2267316 14 9 C 14 11.773268 11.773268 14 9 14 C 6.2267316 14 4 11.773268 4 9 C 4 6.2267316 6.2267316 4 9 4 z"></path>
+                                    </svg>
+                                </label>
                             </div>
-                        </form>
+                            <div class="content-search">
+                                <form class="d-flex" action="search.php">
+                                    <input id="player-search" class="form-control" type="search" placeholder="Search Player" aria-label="Search">
+                                </form>
+                            </div>
+                        </div>
                     </span>
                 </a>
 
@@ -111,12 +114,8 @@ if (!isset($_COOKIE['isLogin'])) {
 
         <!-- END OF ASIDE -->
 
-        <main>
+        <main id="main-body">
             <div class="right">
-                <!-- <h1 class="ps-5">Admin-Logs</h1> -->
-                <!-- <div class="text">
-                    <input type="text" placeholder="Search Player">
-                </div> -->
                 <div class="top">
                     <button id="menu-btn">
                         <span class="material-icons-round">menu</span>
@@ -145,18 +144,7 @@ if (!isset($_COOKIE['isLogin'])) {
                         <div class="border-card">
                             <div class="logs-header">
                                 <h1 class="pb-3">Admin-Logs</h1>
-
-                                <!-- <div class="col-7 pb-3">
-                                    <form class="d-flex" action="search.php">
-                                        <input class="form-control" type="search" placeholder="Search Username" aria-label="Search">
-                                        <button class="btn ms-2" type="submit">
-                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24" style=" fill:#fff;">
-                                                <path d="M 9 2 C 5.1458514 2 2 5.1458514 2 9 C 2 12.854149 5.1458514 16 9 16 C 10.747998 16 12.345009 15.348024 13.574219 14.28125 L 14 14.707031 L 14 16 L 20 22 L 22 20 L 16 14 L 14.707031 14 L 14.28125 13.574219 C 15.348024 12.345009 16 10.747998 16 9 C 16 5.1458514 12.854149 2 9 2 z M 9 4 C 11.773268 4 14 6.2267316 14 9 C 14 11.773268 11.773268 14 9 14 C 6.2267316 14 4 11.773268 4 9 C 4 6.2267316 6.2267316 4 9 4 z"></path>
-                                            </svg>
-                                        </button>
-                                    </form>
-                                </div> -->
-                                <div for="useranme-search" class="content-search-container mb-3">
+                                <div class="content-search-container mb-3">
                                     <div class="content-search pt-2 ps-3">
                                         <label for="username-search">
                                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24" style=" fill:#7380ec;">
@@ -201,7 +189,7 @@ if (!isset($_COOKIE['isLogin'])) {
                             </div>
                         </div>
                     </div>
-                    <div id="col-moderator" class="col">
+                    <div class="col">
                         <div class="border-card">
                             <div class="logs-header">
                                 <h1 class="pb-3">Staff Moderator</h1>

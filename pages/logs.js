@@ -37,21 +37,3 @@ for(let i=0; i<10; i++){
 for(let i=0; i<7; i++){
 	loadMod();
 }
-
-// FOR #col-moderator order on resize
-if ($(window).width() < 992){
-	$("#col-moderator").addClass("order-first");
-}else{
-	if ($("#col-moderator").hasClass("order-first")){
-		$("#col-moderator").removeClass("order-first");
-	}
-}
-$( window ).resize(function() {
-  if ($(window).width() < 992){
-		$("#col-moderator").addClass("order-first");
-	}else{
-		if ($("#col-moderator").hasClass("order-first")){
-			$("#col-moderator").removeClass("order-first");
-		}
-	}
-});
