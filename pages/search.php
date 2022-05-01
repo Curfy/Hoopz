@@ -165,7 +165,7 @@ if (!isset($_COOKIE['isLogin'])) {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm text-light">
+                            <div class="col text-light">
                                 <h1>Zenovain</h1>
                                 <button class="btn btn-neutral">Up to Date</button>
                                 <button class="btn btn-favorite">
@@ -212,13 +212,13 @@ if (!isset($_COOKIE['isLogin'])) {
                                                             <div class="row">
                                                                 <div class="col-auto">
                                                                     <h2 class="status">default</h2>
-                                                                    <h4>5V5</h4>
-                                                                    <h4>04/04/2022</h4>
+                                                                    <h4 class="remove-on-mobile">5V5</h4>
+                                                                    <h4 class="remove-on-mobile">04/04/2022</h4>
                                                                 </div>
-                                                                <div class="col-auto">
+                                                                <div class="col-auto remove-on-mobile">
                                                                     <img src="./images/zenovain.jpg" alt="profile-pic" class="card-pic">
                                                                 </div>
-                                                                <div class="col">
+                                                                <div class="col remove-on-mobile">
                                                                     <br>
                                                                     <h4 class="neutral fw-bold">Zenovain</h4>
                                                                 </div>
@@ -226,12 +226,12 @@ if (!isset($_COOKIE['isLogin'])) {
                                                         </div>
                                                         <div class="col-4">
                                                             <!-- <h2 class="victory text-center pt-4">21-10</h2> -->
-                                                            <h2 class="score text-center pt-4">
+                                                            <h2 class="score text-center">
                                                                 <span class="player-score">21</span>-<span class="enemy-score">10</span>
                                                             </h2>
                                                         </div>
                                                         <div class="col-md">
-                                                            <div class="row row-cols-2 g-3 text-end">
+                                                            <div class="row row-cols-2 g-3 text-center">
                                                                 <div class="col">
                                                                     <img src="images/phronex.png" alt="profile-pic" class="pic enemy-pic">
                                                                     White horse

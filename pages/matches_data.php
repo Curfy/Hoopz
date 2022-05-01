@@ -1,7 +1,7 @@
 <div class="header">
 	<div class="row mb-5 justify-content-between">
 		<div class="col-auto">
-			<div for="useranme-search" class="content-search-container mb-3">
+			<div class="content-search-container mb-3">
 				<div class="content-search pt-2 ps-3">
 					<label for="team-search">
 						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24" style=" fill:#7380ec;">
@@ -19,6 +19,7 @@
 		<div class="col-auto">
 			<div class="date-container">
 				<div type="date"></div>
+				<!-- <div placeholder="" readonly="readonly" class="" type="date"></div> -->
 			</div>
 		</div>
 	</div>
