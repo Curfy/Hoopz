@@ -156,7 +156,7 @@ b{
 }
 
 aside{
-    height: 100vh;
+    height: 100%;
 }
 
 aside .top{
@@ -935,7 +935,7 @@ button{
         width: 18rem;
         z-index: 3;
         box-shadow: 1rem 3rem 4rem var(--color-light);
-        height: 100vh;
+        /* height: 100vh; */
         padding-right: var(--card-padding);
         display: none;
         animation: showMenu 400ms ease forwards;
@@ -963,10 +963,10 @@ button{
         height: 3.4rem;
     }
 
-    aside .sidebar a:last-child{
+    /* aside .sidebar a:last-child{
         position: absolute;
         bottom: 5rem;
-    }
+    } */
 
     aside .close{
         display: inline-block;
@@ -1056,6 +1056,10 @@ button{
     /* .profile-header{
         height: 25em !important;
     } */
+
+    aside .sidebar{
+        height: 100%;
+    }
 
     .remove-on-mobile{
         display: none;
