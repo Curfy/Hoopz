@@ -41,29 +41,22 @@ $(document).ready(function(){
 
 });
 
+// FOR COLLAPSIBLE ASIDE SEARCH BAR
 function setSearchVisibility(){
     $(".sidenav-search-container").css({
         "display": "block", 
-        // "position": "relative", 
-        // "width": "100%", 
         "z-index": "1"
     });
-
     $(".sidenav-search-container").removeClass("search-width-100");
-
     $(".search-icon").css({"display": "none"});
 };
 
 function unsetSearchVisibility(){
     $(".sidenav-search-container").css({
         "display": "none", 
-        // "position": "", 
-        // "width": "", 
         "z-index": ""
     });
-
     $(".sidenav-search-container").addClass("search-width-100");
-
     $(".search-icon").css({"display": "block"});
 };
 
@@ -77,10 +70,11 @@ $("#main-body").on("click", function(){
     if (!$(".sidenav-search-container").hasClass("search-width-100") && $(window).width() <= 1400 && $(window).width() > 768){
         unsetSearchVisibility();
     };
+
+    hideSuggestion();
 })
 
 // FOR BUTTON RIPPLE EFFECT
-
 function createRipple(event) {
   const button = event.currentTarget;
 
@@ -105,4 +99,46 @@ function createRipple(event) {
 const buttons = document.getElementsByTagName("button");
 for (const button of buttons) {
   button.addEventListener("click", createRipple);
+}
+
+// FOR SIDE BAR SUGGESTIONS
+var query = '';
+$('#player-search').on('click', function(){
+    $(this).keyup(function(){
+        query = $(this).val();
+        if (!query.length){
+            hideSuggestion();
+        }
+        else{
+            viewSuggestion('side', query);
+        }
+    })
+})
+
+// FOR PAGE BAR SUGGESTIONS
+$('#team-search, #username-search').on('click', function(){
+    query = $(this).val();
+    $(this).keyup(function(){
+        query = $(this).val();
+        if (!query.length){
+            hideSuggestion();
+        }
+        else{
+            viewSuggestion('page', query);            
+        }
+    });
+});
+
+function viewSuggestion(suggestion, query){
+    $('.' + suggestion + '-suggestions').removeClass('d-none');
+    $('.' + suggestion + '-search-expandable-container').css({"height" : "349px"});
+    for (let i=1; i<6; i++){
+        $('#' + suggestion + '-suggestion-' + i).html(query);
+    }
+}
+
+function hideSuggestion(){
+    $('.suggestions').addClass('d-none');
+    $('.page-search-expandable-container').css({"height" : "35px"});
+    $('.side-search-expandable-container').css({"height" : "35px"});
 }

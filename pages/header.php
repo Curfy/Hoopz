@@ -37,67 +37,101 @@
 
 			<div class="sidebar">
 
-				<a>
+				<!-- <a class="side-link">
 					<span>
 						<label for="player-search" class="search-icon">
 							<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="30" viewBox="0 0 30 30" style=" fill:#677483;">
 								<path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"></path>
 							</svg>
 						</label>
-						<div class="sidenav-search-container mb-3">
-							<div class="content-search">
-								<label for="player-search">
-									<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24" style=" fill:#677483;">
-										<path d="M 9 2 C 5.1458514 2 2 5.1458514 2 9 C 2 12.854149 5.1458514 16 9 16 C 10.747998 16 12.345009 15.348024 13.574219 14.28125 L 14 14.707031 L 14 16 L 20 22 L 22 20 L 16 14 L 14.707031 14 L 14.28125 13.574219 C 15.348024 12.345009 16 10.747998 16 9 C 16 5.1458514 12.854149 2 9 2 z M 9 4 C 11.773268 4 14 6.2267316 14 9 C 14 11.773268 11.773268 14 9 14 C 6.2267316 14 4 11.773268 4 9 C 4 6.2267316 6.2267316 4 9 4 z"></path>
-									</svg>
-								</label>
-							</div>
-							<div class="content-search">
-								<form class="d-flex" action="search.php">
-									<input id="player-search" class="form-control" type="search" placeholder="Search Player" aria-label="Search">
-								</form>
+						<div class="search-wrap">
+							<div class="side-search-expandable-container mb-3 test">
+								<div class="content-search">
+									<label for="player-search">
+										<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24" style=" fill:#677483;">
+											<path d="M 9 2 C 5.1458514 2 2 5.1458514 2 9 C 2 12.854149 5.1458514 16 9 16 C 10.747998 16 12.345009 15.348024 13.574219 14.28125 L 14 14.707031 L 14 16 L 20 22 L 22 20 L 16 14 L 14.707031 14 L 14.28125 13.574219 C 15.348024 12.345009 16 10.747998 16 9 C 16 5.1458514 12.854149 2 9 2 z M 9 4 C 11.773268 4 14 6.2267316 14 9 C 14 11.773268 11.773268 14 9 14 C 6.2267316 14 4 11.773268 4 9 C 4 6.2267316 6.2267316 4 9 4 z"></path>
+										</svg>
+									</label>
+								</div>
+								<div class="content-search">
+									<form class="d-flex" action="search.php">
+										<input id="player-search" class="form-control" type="search" placeholder="Search Player" aria-label="Search">
+									</form>
+								</div>
+								<div class="suggestions side-suggestions d-none">
+									<div class="suggestion-item ">
+										<a href="./search.php">
+											<img src="./images/luka-pic.jpg" alt="profile-pic" class="suggestion-pic ">
+											<label id="side-suggestion-1">hello</label>
+										</a>
+									</div>
+									<div class="suggestion-item ">
+										<a href="./search.php">
+											<img src="./images/luka-pic.jpg" alt="profile-pic" class="suggestion-pic ">
+											<label id="side-suggestion-2">hello</label>
+										</a>
+									</div>
+									<div class="suggestion-item ">
+										<a href="./search.php">
+											<img src="./images/luka-pic.jpg" alt="profile-pic" class="suggestion-pic ">
+											<label id="side-suggestion-3">hello</label>
+										</a>
+									</div>
+									<div class="suggestion-item ">
+										<a href="./search.php">
+											<img src="./images/luka-pic.jpg" alt="profile-pic" class="suggestion-pic ">
+											<label id="side-suggestion-4">hello</label>
+										</a>
+									</div>
+									<div class="suggestion-item ">
+										<a href="./search.php">
+											<img src="./images/luka-pic.jpg" alt="profile-pic" class="suggestion-pic ">
+											<label id="side-suggestion-5">hello</label>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</span>
-				</a>
+				</a> -->
 
-				<a href="dashboard.php">
+				<a class="side-link" href="dashboard.php">
 					<span class="material-icons-sharp">grid_view</span>
 					<h3>Dashboard</h3>
 				</a>
 
-				<a href="matches.php">
+				<a class="side-link" href="matches.php">
 					<span class="material-icons-outlined">sports_esports</span>
 					<h3>Matches</h3>
 				</a>
 
-				<a href="#">
+				<a class="side-link" href="#">
 					<span class="material-icons-outlined">shopping_bag</span>
 					<h3>Purchases</h3>
 				</a>
 
-				<a href="logs.php">
+				<a class="side-link" href="logs.php">
 					<span class="material-icons-outlined">book</span>
 					<h3>Logs</h3>
 				</a>
 
-				<a href="#">
+				<a class="side-link" href="#">
 					<span class="material-icons-outlined">mail_outline</span>
 					<h3>Messages</h3>
 					<span class="message-count">26</span>
 				</a>
 
-				<a href="#">
+				<a class="side-link" href="#">
 					<span class="material-icons-outlined">trending_up</span>
 					<h3>Analytics</h3>
 				</a>
 
-				<a href="#">
+				<a class="side-link" href="#">
 					<span class="material-icons-sharp">settings</span>
 					<h3>Settings</h3>
 				</a>
 
-				<a id="logoutBtn" class="logout">
+				<a class="side-link" id="logoutBtn" class="logout">
 					<span class="material-icons-outlined">logout</span>
 					<h3>Logout</h3>
 				</a>
